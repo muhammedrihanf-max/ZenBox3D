@@ -61,5 +61,7 @@ func NewAudio() *Audio {
 	return a
 }
 
+func NewListener(cam interface{}) {}
+
 func (a *Audio) SetMusicVolume(vol float32) {}
 func (a *Audio) SetSfxVolume(vol float32)   {}

@@ -116,6 +116,14 @@ func NewAudio() *Audio {
 	return a
 }
 
+// NewListener creates a new audio listener and adds it to the camera
+func NewListener(cam *camera.Camera) {
+	listener := audio.NewListener()
+	cdir := cam.Direction()
+	listener.SetDirectionVec(&cdir)
+	cam.Add(listener)
+}
+
 // SetMusicVolume sets the volume of the music
 func (a *Audio) SetMusicVolume(vol float32) {
 	log.Debug("Set Music Volume %v", vol)

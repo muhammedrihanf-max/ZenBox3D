@@ -583,10 +583,7 @@ func main() {
 	g.audio = NewAudio()
 
 	// Create audio listener and add it to the current camera
-	listener := audio.NewListener()
-	cdir := g.camera.Direction()
-	listener.SetDirectionVec(&cdir)
-	g.camera.Add(listener)
+	NewListener(g.camera)
 
 	// Update settings based on loaded (or newly created) user data
 	g.ui.UpdateMusicButton(g.userData.MusicOn)
