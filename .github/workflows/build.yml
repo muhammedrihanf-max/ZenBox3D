@@ -48,7 +48,7 @@ jobs:
         gomobile init
     - name: Build Android APK
       run: |
-        gomobile build -v -target android -o zenbox3d.apk .
+        gomobile build -v -target android -androidapi 21 -o zenbox3d.apk .
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
