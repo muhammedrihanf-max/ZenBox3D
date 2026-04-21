@@ -6,7 +6,6 @@ package main
 
 import (
 	"github.com/g3n/engine/app"
-	"github.com/g3n/engine/audio"
 	"github.com/g3n/engine/camera"
 	"github.com/g3n/engine/core"
 	"github.com/g3n/engine/geometry"
