@@ -8,6 +8,7 @@ package main
 
 import (
 	"github.com/g3n/engine/audio"
+	"github.com/g3n/engine/camera"
 )
 
 // Audio contains all sounds and music used by the game

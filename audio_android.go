@@ -2,6 +2,10 @@
 
 package main
 
+import (
+	"github.com/g3n/engine/camera"
+)
+
 // Dummy player for when audio is disabled
 type dummyPlayer struct{}
 
@@ -61,7 +65,7 @@ func NewAudio() *Audio {
 	return a
 }
 
-func NewListener(cam interface{}) {}
+func NewListener(cam *camera.Camera) {}
 
 func (a *Audio) SetMusicVolume(vol float32) {}
 func (a *Audio) SetSfxVolume(vol float32)   {}
